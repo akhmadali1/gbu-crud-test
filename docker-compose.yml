@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: madridmu123
       POSTGRES_DB: gbu_db_test
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - postgres_data:/var/lib/postgresql
     healthcheck:
@@ -23,7 +23,7 @@ services:
     container_name: mongo
     restart: unless-stopped
     ports:
-      - "27017:27017"
+      - "27019:27017"
     volumes:
       - mongo_data:/data/db
 
